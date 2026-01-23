@@ -22,8 +22,8 @@ while True:
 
 print("💰 Total Investment Value: ₹", total_value)
 
-# Save result to file
-with open("portfolio.txt", "w") as file:
+# Save result to file (UTF-8 FIX)
+with open("portfolio.txt", "w", encoding="utf-8") as file:
     file.write(f"Total Investment Value: ₹{total_value}")
 
-print("Saved result in portfolio.txt")
+print("✅ Saved result in portfolio.txt")
